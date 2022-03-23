@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root{
+    --heading: rbg(0 10 45);
+    --para: #777;
+    ---para-tint: #e4e4e4;
+    --white: #fff;
+    --black: #212529;
+    --helper: #8490ff;
+    --overlay: #3e64ff;
+    --helper-tint: #f3f4ff;
+    --bg: rgb(249 249 255);
+    --icons-bg: rgba(144, 172, 209, 0.2);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --gradientSupport: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%
+    );
+    --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+
+}
+
+html {
+    font-size: 62.5%;
+    /* scroll-behavior: smooth; */
+    /* 1rem = 10px */
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+  
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+li{
+    list-style: none;
+}
+
+
+/* ====================
+Header Section Start
+==================== */
+
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    height: 3rem;
+}
+
+.navbar-lists{
+     display: flex;
+     gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper);
+}
