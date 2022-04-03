@@ -123,6 +123,16 @@ li{
     /* grid-template-columns: 1fr 1fr; */
 }
 
+.grid-three-column{
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.grid-four-column{
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+}
+
 .btn{
     background: var(--gradientSupport);
     padding: 1.6rem 3.2rem;
@@ -335,4 +345,182 @@ li{
     /* border-top-color: blue; */
 }
 
+/* =======================================
+        Portfolio Section Start
+======================================= */
+
+
+.section-portfolio{
+    background: var(-bg);
+    transition: all 0.7s linear;
+}
+
+.section-portfolio p{
+    max-width: 60rem;
+}
+
+.p-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+    margin: 6.4rem 0;
+}
+
+.portfolio-images{
+    gap: 3.2rem;
+    /* margin-top: 6.4rem; */
+}
+
+.portfolio-images img{
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay{
+    position: relative;
+    overflow: hidden;
+    /* To hide the overlay initially  */
+}
+
+.img-overlay .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradientSupport);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+}
+
+.img-overlay:hover > .overlay{
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.img-overlay .common-heading{
+    margin: 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.p-btn:hover{
+    transform: translateY(-1rem);
+}
+
+.p-btn-active{
+    transform: translateY(-1rem);
+}
+
+/* Created this class to hide the unwanted project, which will be added through JS */
+.p-image-not-active{
+    display: none;
+}
+
+/* =======================================
+        Work data Section Start
+======================================= */
+
+.section-work-data{
+    background: var(--gradientSupport);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: var(--white);
+}
+
+.counter-numbers{
+    font-size: 4.8rem;
+}
+
+.section-work-data p{
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+/* =======================================
+    Our Services Section Start
+======================================= */
+
+.section-services{
+    transition: all 0.7s linear;
+}
+
+.section-services p{
+    max-width: 60rem;
+}
+
+.section-services .grid{
+    margin-top: 10rem;
+    row-gap: 10rem;
+}
+
+.service-box{
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+}
+
+.service-box:hover, 
+.service-box:active{
+    transform: translateY(-3rem);
+}
+
+.service-icon{
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--icons-bg);
+    display: inline-block;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+}
+
+/* Inside border of the animated portion */
+.service-icon::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+    0%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+
+    50%{
+        border-radius: 26% 74% 48% 52% / 60% 19% 81% 40%;
+    }
+
+    100%{
+        border-radius: 92% 8% 62% 38% / 11% 54% 46% 89% ;
+    }
+}
+
+.service-box h3{
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
 
