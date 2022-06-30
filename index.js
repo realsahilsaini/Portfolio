@@ -1,3 +1,34 @@
+const heroSection = document.querySelector(".section-hero")
+
+//========================================
+//Creating a responsive navbar component
+//========================================
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const headerElem = document.querySelector(".header")
+
+mobile_nav.addEventListener("click", ()=>{
+    headerElem.classList.toggle("active");
+})
+
+
+//========================================
+//Creating a sticky responsive navbar component
+//========================================
+
+const observer = new IntersectionObserver((entries)=> {
+    const ent = entries[0];
+    // console.log(ent);
+    !ent.isIntersecting 
+    ? document.body.classList.add("sticky") 
+    : document.body.classList.remove("sticky")
+}, {
+    root: null, 
+    threshold:0
+});
+
+observer.observe(heroSection)
+
 //========================================
 //Creating a portfolio tabbed component
 //========================================
@@ -32,3 +63,80 @@ p_btns.addEventListener("click", (e) => {
 });
 
 
+// Testimonial(swiper.js) code
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    autoplay:{
+        delay:2000,
+        // disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+// Scroll to top button 
+// const heroSection = document.querySelector(".section-hero")
+const footerelement = document.querySelector(".section-footer")
+
+const scrollelement = document.createElement("div");
+scrollelement.classList.add("scrollTop-style");
+
+scrollelement.innerHTML = `<ion-icon class="scroll-top" name="arrow-up-outline"></ion-icon>`;
+
+footerelement.after(scrollelement);
+
+const scrollTop = () => {
+    heroSection.scrollIntoView({behavior:"smooth"})
+}
+
+scrollelement.addEventListener("click", scrollTop);
+
+
+
+
+const workSection = document.querySelector('.section-work-data');
+
+const workObserver = new IntersectionObserver((entries, observer) => {
+    const [entry] = entries;
+    console.log(entry)
+
+    // if(entry.isIntersecting = false)
+    if(!entry.isIntersecting) return;
+
+    //animate number counter 
+
+const counterNum = document.querySelectorAll(".counter-numbers");
+
+const speed = 10;
+
+counterNum.forEach((curElem)=>{
+    const updateNumber = () =>{
+        const targetNumber = parseInt(curElem.dataset.number);
+        // console.log(targetNumber);
+        const initialNum = parseInt(curElem.innerText);
+        // console.log(initialNum);
+
+        const incrementNumber = Math.trunc(targetNumber/speed);
+        // console.log(incrementNumber);
+
+        if(initialNum<targetNumber){
+            curElem.innerText = `${initialNum + incrementNumber}+`;
+            setTimeout(updateNumber, 100)
+        }
+        
+    };
+    updateNumber(); //1st priority to call function  
+});
+
+observer.unobserve(workSection)
+
+}, {
+    root: null,
+    threshold: 0
+});
+
+workObserver.observe(workSection)
