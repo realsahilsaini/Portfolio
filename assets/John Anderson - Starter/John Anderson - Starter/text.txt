@@ -1,0 +1,221 @@
+========== HOME ==========
+.home__name
+John Anderson_
+
+.home__work
+frontend developer, QA-engineer
+
+.home__list
+AGE:
+23
+
+PHONE:
+8 (234) 456-33-33
+
+EMAIL:
+mail@mail.com
+
+ADDRESS:
+Melbourne Victoria 3000 Australia
+
+.home__social-link
+https://github.com/
+https://www.linkedin.com/
+https://www.facebook.com/
+
+========== HELLO ==========
+.section__title
+Hi_
+
+.hello__details
+I am Junior Web developer able to build a Web presence from the ground up - from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.
+
+========== SERVICES ==========
+.section__title
+Services_
+
+.services__title
+WEB DESIGN
+
+WEB DEVELOPMENT
+
+CREATIVE DESIGN
+
+RESPONSIVE DESIGN
+
+BRANDING IDENTITY
+
+24/7 SUPPORT
+
+.services__detail
+am an expert web designer and developer. Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+
+========== RESUME ==========
+.section__title
+Resume_
+
+.resume__title
+EDUCATION
+EMPLOYMENT
+
+.resume__subtitle | .resume__date | .resume__description
+UNIVERSITY OF MINNESOTA TWIN CITIES
+2006 - 2010
+Bachelor Computer Engineering Lorem
+
+SCHOOL OF INFORMATIONAL TECHNOLOGIES
+2004 - 2005
+Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+
+LOREM IPSUM SCHOOL
+2003 - 2006
+Student, Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+
+APPLE
+2006 - 2010
+Senior Full Stack Developer
+
+TECH UNIVERSITY
+2004 - 2005
+Awesome developer, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius- mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+
+MOLLYS STUDIO
+2003 - 2006
+Programmer Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut
+	
+
+========== SKILLS ==========	
+.section__title
+Skills_
+
+.skills__title
+FRONTEND
+BACKEND
+
+.skills__name | .skills__percentage
+HTML
+90%
+
+CSS
+80%
+
+JavaScript
+60%
+
+React
+85%
+
+PHP
+90%
+
+Node Js
+80%
+
+Python
+60%
+
+MySQL
+85%
+
+========== WORK  ==========
+.section__title
+Work_
+
+.category__btn
+ALL
+MOBILE APPS
+WEB-SITES
+LANDING PAGES
+
+.project__titles
+MOBILE AND DESKTOP APP FOR LONDON HOSTEL STORE
+
+WEB APP PAGE FOR TRAVEL COMPANY
+
+ADMIN TEMPLATE FOR PHOTO SERVICE
+
+.project__description
+Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.
+
+.project__stack
+USED STACK:
+
+.tags
+html5
+css3
+JavaScript
+BEM
+bower
+grunt
+
+========== TESTIMONIALS ==========
+.author__name
+Antonio Anderson
+
+.author__project
+Project: Landin page for travel company
+
+.testimonial__description
+Up or well must less rent read walk so be. Easy sold at do hour sing spot. Any meant has cease too the decay. Since party burst am it match. By or blushes between besides offices noisier as. Sending do brought winding compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has cease too the decay.
+
+========== BLOGS ==========
+.section__title
+Latest Posts_
+
+.post__date
+October 22, 2017
+
+.post__title
+HOW TO USE CSS-PREPROCESSOR
+
+HOW I ORGANIZE MY WORK WITH CODE
+
+SVG SPRITES VS ICON FONT
+
+.post__description
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempr incididu...
+
+========== CONTACT ==========
+.section__title
+Get in touch_
+
+.contact_list
+Phone:
+8 (234) 456-33-33
+
+Skype:
+iamivanovivan
+
+Email:
+mail@gmail.com
+
+.contact__social
+https://www.facebook.com/
+https://www.linkedin.com/
+https://github.com/
+https://bitbucket.com/
+
+
+.contact_form-title
+Or just write me a letter here_
+
+.footer_copy
+&copy; 2016 Ivan Susanin. All Rights Reserved
+
+========== BLOG DETAILS ==========
+.post__details-title
+HOW I ORGANIZE MY WORK WITH CODE
+
+.post__details-date
+April, 20, 2017
+
+.post__details
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
+
+figcaption
+This is how I organize my HTML, CSS and PHP files
