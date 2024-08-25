@@ -1132,12 +1132,6 @@ input {
 }
 
 @media screen and (max-width: 400px) {
-  .container {
-    max-width: 340px;
-  }
-}
-
-@media screen and (max-width: 370px) {
   .hello {
     max-width: 280px;
   }
