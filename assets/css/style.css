@@ -240,7 +240,7 @@ input {
 
 /*=============== Home ===============*/
 .home {
-  background: url(../img/home-bg.jpg);
+  background: url(../img/home-bg-avif.avif);
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -1035,15 +1035,6 @@ input {
     margin: 0 auto;
     margin-bottom: 50px;
     box-shadow: 0 0 27px rgba(0, 0, 0, 0.55);
-  }
-
-  .home {
-    background: url(../img/home-bg.jpg);
-    background-size: cover;
-    background-position: 50%;
-    padding-top: 5.5rem;
-    position: relative;
-    margin-bottom: 2.5rem;
   }
 
 
