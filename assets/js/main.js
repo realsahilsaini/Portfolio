@@ -16,7 +16,7 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 
-window.addEventListener("scroll", scrollHeader);
+// window.addEventListener("scroll", scrollHeader);
 
 /*=============== Active Work =============== */
 const linkWork = document.querySelectorAll(".category__btn");
@@ -29,14 +29,14 @@ function activeWork() {
 linkWork.forEach((n) => n.addEventListener("click", activeWork));
 
 /*=============== Mixitup Filter =============== */
-let mixerProjects = mixitup(".projects__container", {
-  selectors: {
-    target: ".project__item",
-  },
-  animation: {
-    duration: 300,
-  },
-});
+// let mixerProjects = mixitup(".projects__container", {
+//   selectors: {
+//     target: ".project__item",
+//   },
+//   animation: {
+//     duration: 300,
+//   },
+// });
 
 /*=============== Testimonials Swiper =============== */
 var testSwiper = new Swiper(".testimonial__container", {
@@ -76,4 +76,4 @@ const sendEmail = (e) => {
   }
 };
 
-contactForm.addEventListener("submit", sendEmail);
+// contactForm.addEventListener("submit", sendEmail);
