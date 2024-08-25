@@ -1136,6 +1136,16 @@ input {
     max-width: 280px;
   }
 }
+@media screen and (max-width: 315px) {
+
+  .home__work{
+    font-size: 0.9rem;
+  }
+
+  .home__list dd {
+    font-size: 0.8rem;
+  }
+}
 
 
 
