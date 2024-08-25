@@ -1013,7 +1013,6 @@ input {
 /* for medium devices */
 @media screen and (max-width: 768px) {
 
-
   .container {
     max-width: 540px;
   }
@@ -1134,6 +1133,9 @@ input {
 @media screen and (max-width: 400px) {
   .hello {
     max-width: 280px;
+  }
+  .home__work {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 315px) {

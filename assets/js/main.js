@@ -5,7 +5,7 @@
 // });
 
 const homeWork = new Typed('.home__work', {
-  strings: ['Full Stack | Blockchain | Freelancer'],
+  strings: ['Full Stack^500 | Blockchain^500 | Freelancer'],
   typeSpeed: 50,
   cursorChar: '',
 });
