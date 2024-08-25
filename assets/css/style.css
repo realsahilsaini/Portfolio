@@ -1137,6 +1137,12 @@ input {
   }
 }
 
+@media screen and (max-width: 357px) {
+  .hello {
+    max-width: 280px;
+  }
+}
+
 
 
 
