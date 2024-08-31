@@ -1018,12 +1018,10 @@ input {
     max-width: 540px;
   }
 
-
   .home__container {
     /* grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
-    height: 90vh;
   }
 
   .home__img {
