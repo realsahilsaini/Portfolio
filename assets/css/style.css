@@ -709,7 +709,7 @@ input {
 } */
 
 /*=============== Blog ===============*/
-.posts__container {
+/* .posts__container {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
   margin-bottom: 2.5rem;
@@ -737,11 +737,11 @@ input {
 .post__description {
   color: var(--text-color-alt);
   text-align: justify;
-}
+} */
 
 
 /*=============== Contact ===============*/
-.contact {
+/* .contact {
   background: url(../img/bg.jpg);
   background-size: cover;
   background-position: 50%;
@@ -853,7 +853,7 @@ input {
   margin-top: 1.875rem;
   width: 100%;
   box-shadow: 0 1px 29px rgb(0 0 0 / 40%);
-}
+} */
 
 
 .footer__copy {
