@@ -339,7 +339,7 @@ input {
 }
 
 /*=============== Buttons ===============*/
-.button {
+/* .button {
   display: inline-block;
   background-color: var(--primary-color);
   color: #fff;
@@ -351,7 +351,7 @@ input {
 
 .button:hover {
   background-color: var(--primary-color-alt);
-}
+} */
 
 /* .button--flex{
   display: inline-flex;
@@ -362,7 +362,7 @@ input {
 
 /*=============== Services ===============*/
 
-.services__container {
+/* .services__container {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.875rem;
 }
@@ -382,14 +382,12 @@ input {
   margin-bottom: 2.25rem;
   position: relative;
   display: flex;
-  /* background-color: red; */
 }
 
 
 .services__icon {
   width: 32px;
   margin: auto;
-  /* background-color: yellow; */
 }
 
 .services__dot {
@@ -400,8 +398,6 @@ input {
   height: 100%;
   animation: service-dot 2s linear infinite;
   animation-play-state: paused;
-  /* background-color: blue;
-  opacity: 0.5; */
 }
 
 .services__item:hover .services__dot {
@@ -430,12 +426,12 @@ input {
 
 .services__title {
   margin-bottom: 0.8em;
-}
+} */
 
 
 /*=============== Resume ===============*/
 
-.resume__container {
+/* .resume__container {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3.75rem;
 }
@@ -479,11 +475,11 @@ input {
 
 .resume__description {
   text-align: justify;
-}
+} */
 
 /*=============== Skills ===============*/
 
-.skills__container {
+/* .skills__container {
   grid-template-columns: repeat(2, 445px);
   column-gap: 7rem;
 }
@@ -511,12 +507,12 @@ input {
 .skills__percentage {
   background-color: var(--primary-color);
   display: block;
-}
+} */
 
 
 /*=============== Projects ===============*/
 
-.project__categories {
+/* .project__categories {
   display: flex;
   flex-wrap: wrap;
   column-gap: 3rem;
@@ -604,13 +600,13 @@ input {
   margin-top: 3.9rem;
   color: var(--primary-color);
   font-family: var(--kode-font);
-}
+} */
 
 
 
 /*=============== Testimonials ===============*/
 
-.testimonial__bg {
+/* .testimonial__bg {
   background: url(../img/bg.jpg);
   background-size: cover;
   background-position: 50%;
@@ -710,7 +706,7 @@ input {
 
 .swiper-pagination-bullet-active {
   background-color: #fff;
-}
+} */
 
 /*=============== Blog ===============*/
 .posts__container {
@@ -1034,6 +1030,11 @@ input {
     margin: 0 auto;
     margin-bottom: 50px;
     box-shadow: 0 0 27px rgba(0, 0, 0, 0.55);
+  }
+
+  .hello__details{
+    line-height: 2.2em;
+
   }
 
 
