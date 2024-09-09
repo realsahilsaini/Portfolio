@@ -164,7 +164,6 @@ body{
 .about {
   /* background-color: rgb(17, 24, 29); */
   background-color: beige;
-  
   color: #000;
   padding: 7rem 2rem 2rem 2rem;
   border-top: 2px solid black;
@@ -219,9 +218,7 @@ body{
 /* ----------------------------------- */
 
 .grid-container {
-  position: relative;
-  background-color: beige;
-  z-index: 99999;
+  margin: 0 auto;
   padding-top: 2rem;
 }
 
@@ -246,18 +243,15 @@ body{
 }
 
 
-@media (max-width: 1240px){
-  .grid-container{
-    width: calc(100vh- 40px) !important;
-  }
+@media (max-width: 1280px){
   .mansory-container{
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     columns: 3;
   }
 }
 @media (max-width: 768px){
   .mansory-container{
-    width: calc(100% - 50px);
+    width: calc(100% - 30px);
     columns: 2;
   }
 }
