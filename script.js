@@ -6,11 +6,12 @@
 
 
 var typed = new Typed('#typed-js', {
-  strings: ['Full Stack', 'Dapps / Web3', 'Data Engineering', 'MLOps', 'Freelancer'],
+  strings: ['Full Stack', 'Dapps / Web3', 'Data Engineering', 'MLOps', 'Freelance'],
   startDelay: 0,
   typeSpeed: 50,
   backSpeed: 50,
+  backDelay: 1500,
   loop: true,
+  loopCount: Infinity,
   showCursor: true,
-  contentType: 'html',
 });
