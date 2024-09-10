@@ -20,9 +20,7 @@
 }
 
 body{
-  /* background-color: rgb(17, 24, 29); */
   background-color: beige;
-  cursor: url(./cursor.png), auto;
 }
 
 .container {
@@ -32,18 +30,18 @@ body{
 }
 
 .hero {
-  /* background-color: rgb(120, 120, 120); */
-  /* background-color: rgb(243, 223, 193); */
   background-color: #f4d1ae;
-  /* background: url(./home-bg.jpg); */
   background-position: 50%;
   background-size:cover;
-  /* height: 92vh; */
   padding: 7rem 2rem 14rem 2rem;
   overflow: hidden;
   position: sticky;
   top: 0;
   z-index: -9;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
 /* .hero::before{
@@ -58,21 +56,12 @@ body{
 } */
 
 .hero-container {
+  background-color: #f4d1ae;
   border-radius: 50px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   padding: 2rem;
-  /* position: relative;
-  top: 30px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   border:2px solid black;
   box-shadow: 10px 10px 0px rgb(0, 0, 0);
 }
@@ -114,7 +103,6 @@ body{
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
-  /* -webkit-text-stroke: 2px black; */
 }
 
 .home-socials {
@@ -153,12 +141,7 @@ body{
 }
 
 
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-  .hero-container {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* iOS-specific */
-  }
-}
+
 
 
 .about {
