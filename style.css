@@ -207,7 +207,7 @@ body{
 
 .mansory-container{
   columns: 4;
-  column-gap: 20px;
+  column-gap: 15px;
   width: 1200px;
   margin: 0 auto;
 }
