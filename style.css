@@ -58,7 +58,7 @@ body{
 .hero-container {
   background-color: #f4d1ae;
   border-radius: 50px;
-  padding: 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -331,13 +331,13 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 470px){
 
   .hero{
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 5rem 2rem;
   }
  
   .hero-container {
     width: 375px;
     margin: 0 auto;
-    padding: 4rem 1rem 4rem 1rem; 
+    padding: 4rem 1rem; 
   
   }
 
@@ -375,7 +375,7 @@ body::-webkit-scrollbar-thumb {
   .hero-container {
     width: 325px;
     margin: 0 auto;
-    padding: 4rem 1rem 4rem 1rem;
+    padding: 4rem 1rem;
   }
 
   .hero-work{
@@ -393,7 +393,7 @@ body::-webkit-scrollbar-thumb {
   .hero-container {
     width: 300px;
     margin-left: -5px;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .hero-data{
