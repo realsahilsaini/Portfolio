@@ -37,7 +37,6 @@ body{
   overflow: hidden;
   position: sticky;
   top: 0;
-  z-index: -9;
   background-size: 40px 40px;
   background-image:
     linear-gradient(to right, grey 1px, transparent 1px),
@@ -127,7 +126,7 @@ body{
   font-size: 2.5rem;
   line-height: 1.36em;
   margin-right: 0.25rem;
-  opacity: 0.7;
+  opacity: 0.6;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
