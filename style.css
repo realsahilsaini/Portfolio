@@ -281,7 +281,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 780px){
 
   .hero{
-    padding: 7rem 2rem 7rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
   }
 
   .hero-container {
@@ -313,6 +313,10 @@ body::-webkit-scrollbar-thumb {
 
   .typed-cursor{
     font-size: 1.2em;
+  }
+
+  .about{
+    transform: translateY(-35px);
   }
 
   
@@ -455,7 +459,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .hero{
-    padding-bottom: 4rem;
+    padding-bottom: 3.5rem;
   }
 
 
