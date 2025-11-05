@@ -142,9 +142,6 @@
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="./script.js"></script>
-
 <script>
   // Fallback for browsers without JS
   var stylesheet = document.createElement('link');
@@ -153,6 +150,18 @@
   if (!document.querySelector('link[href="style.css"]')) {
     document.head.appendChild(stylesheet);
   }
+  
+  // Load typed.js and script.js asynchronously after page load
+  window.addEventListener('load', function() {
+    var typedScript = document.createElement('script');
+    typedScript.src = 'https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js';
+    typedScript.onload = function() {
+      var mainScript = document.createElement('script');
+      mainScript.src = './script.js';
+      document.body.appendChild(mainScript);
+    };
+    document.body.appendChild(typedScript);
+  });
 </script>
 
 </body>
