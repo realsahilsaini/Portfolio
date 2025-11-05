@@ -5,19 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sahil Saini</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <meta name="description" content="Full‑stack developer (MERN), exploring Web3 and no‑code. Building seamless front‑ends and solid back‑ends. Based in Mumbai & Dubai.">
+  <meta name="theme-color" content="#f4d1ae">
+  <link rel="canonical" href="https://sahilsaini.tech/">
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="preload" href="assets/fonts/kode_mono/Kode[wght].woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://scripts.simpleanalyticscdn.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preload" as="image" href="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057479/pfpMemoji_jtztqk.svg" fetchpriority="high">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Sahil Saini — Full‑Stack Developer">
+  <meta property="og:description" content="Full‑stack developer (MERN), exploring Web3 and no‑code. Building seamless front‑ends and solid back‑ends.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sahilsaini.tech/">
+  <meta property="og:image" content="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057479/pfpMemoji_jtztqk.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sahil Saini — Full‑Stack Developer">
+  <meta name="twitter:description" content="Full‑stack developer (MERN), exploring Web3 and no‑code. Building seamless front‑ends and solid back‑ends.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057479/pfpMemoji_jtztqk.svg">
+  
+  <!-- PWA / Icons -->
+  <link rel="icon" type="image/webp" href="assets/favicon/favIcon.webp">
+  <link rel="apple-touch-icon" href="assets/favicon/favIcon.webp">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <main>
+  <main role="main">
 
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
 
       <div class="hero-container container animate__animated animate__backInDown">
 
@@ -27,90 +55,90 @@
             <p id="typed-js" class="hero-work"> </p>
           </div>
 
-          <dl class="home-list ">
+          <dl class="home-list" aria-label="Contact information">
             <dt>AGE:</dt>
             <dd>22</dd>
 
             <dt>EMAIL:</dt>
-            <dd><a href="mailto:mail@sahilsaini.tech" >mail@sahilsaini.tech</a></dd>
+            <dd><a href="mailto:mail@sahilsaini.tech">mail@sahilsaini.tech</a></dd>
 
             <dt>ADDRESS:</dt>
             <dd>Mumbai & Dubai</dd>
           </dl>
 
-          <div class="home-socials">
-            <a href="https://github.com/realsahilsaini" target="_blank" class="home__social">
-              <i class="ri-github-fill"></i>
+          <nav class="home-socials" aria-label="Social media links">
+            <a href="https://github.com/realsahilsaini" target="_blank" rel="noopener noreferrer" class="home__social" aria-label="GitHub profile">
+              <img src="assets/img/socials/github-142-svgrepo-com.svg" alt="" width="40" height="40" />
             </a>
-            <a href="https://www.linkedin.com/in/realsahilsaini" target="_blank" class="home__social">
-              <i class="ri-linkedin-box-fill"></i>
+            <a href="https://www.linkedin.com/in/realsahilsaini" target="_blank" rel="noopener noreferrer" class="home__social" aria-label="LinkedIn profile">
+              <img src="assets/img/socials/linkedin-rounded-svgrepo-com.svg" alt="" width="40" height="40" />
             </a>
-            <a href="https://x.com/realsahilsaini" target="_blank" class="home__social">
-              <i class="ri-twitter-x-fill"></i>
+            <a href="https://x.com/realsahilsaini" target="_blank" rel="noopener noreferrer" class="home__social" aria-label="X (Twitter) profile">
+              <img src="assets/img/socials/Twitter-X--Streamline-Bootstrap.svg" alt="" width="40" height="40" />
             </a>
-
-
-          </div>    
+          </nav>    
         </div>
 
         <div class="hero-pic">
-          <img class="hero-img"
+          <img class="hero-img" width="250" height="250" fetchpriority="high" decoding="async"
             src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057479/pfpMemoji_jtztqk.svg"
-            alt="" srcset="">
+            alt="Portrait illustration of Sahil Saini" srcset="">
         </div>
 
       </div>
     </section>
 
-    <section class="about">
-      <div class="container">
-        <h2 class="about-head">Hi_</h2>
-        <p class="about-body">Hey there! I'm a self-taught full-stack developer with a passion for building innovative web applications using the MERN stack. I’ve created seamless front-end experiences with React and solid back-end systems with Node.js and Express, bringing ideas to life through code. On top of that, I’m diving deep into the Web3 space, exploring the exciting possibilities of decentralized technology. Alongside coding, I’m also into the no-code movement, where I’ve built practical applications that solve real-life problems, simplifying processes and adding real value. Whether it's through traditional web development or leveraging no-code tools, I'm always excited to push the boundaries of what's possible. Let’s create something awesome together!</p>
-      </div>
-
+    <section class="about" aria-label="About and Gallery">
 
       <div class="grid-container">
-        <div class="mansory-container">
 
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057467/mansory1-min_nmlalh.webp">
+          <div class="container">
+            <h2 class="about-head">Snaps_</h2>
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory3-min_xuyrlo.webp">
+
+        <div class="mansory-container" role="list" aria-label="Photo gallery">
+
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057467/mansory1-min_nmlalh.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory4-min_bdhlz3.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory3-min_xuyrlo.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory5-min_rq5ic2.jpg">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory4-min_bdhlz3.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory7-min_tglisg.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory5-min_rq5ic2.jpg">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory8-min_r8qjio.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory7-min_tglisg.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory9-min_eibkbe.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory8-min_r8qjio.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory10-min_ramojg.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory9-min_eibkbe.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory11-min_exrb8m.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory10-min_ramojg.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory12-min_kcr9vp.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory11-min_exrb8m.webp">
           </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory13-min_kuw9mo.webp">
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory12-min_kcr9vp.webp">
           </div>
-          
-          
+          <div class="box" role="listitem">
+            <img loading="lazy" decoding="async" alt="" width="300" height="200" src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory13-min_kuw9mo.webp">
+          </div>
     
         </div>
       </div>
 
+      <div class="container">
+        <h2 class="about-head">Hi_</h2>
+        <p class="about-body">Hey there! I'm a self-taught full-stack developer with a passion for building innovative web applications using the MERN stack. I’ve created seamless front-end experiences with React and solid back-end systems with Node.js and Express, bringing ideas to life through code. On top of that, I’m diving deep into the Web3 space, exploring the exciting possibilities of decentralized technology. Alongside coding, I’m also into the no-code movement, where I’ve built practical applications that solve real-life problems, simplifying processes and adding real value. Whether it's through traditional web development or leveraging no-code tools, I'm always excited to push the boundaries of what's possible. Let’s create something awesome together!</p>
+      </div>
     </section>
 
 
@@ -121,8 +149,8 @@
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="./script.js"></script>
+<script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script defer src="./script.js"></script>
 
 
 </body>

@@ -5,7 +5,29 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&display=swap');
+/* Local Kode Mono font (WOFF2) */
+@font-face {
+  font-family: 'Kode Mono';
+  src: url('assets/fonts/kode_mono/Kode[wght].woff2') format('woff2');
+  font-weight: 400 700; /* supports regular to bold */
+  font-style: normal;
+  font-display: swap;
+}
+/* Static fallbacks for older browsers */
+@font-face {
+  font-family: 'Kode Mono';
+  src: url('assets/fonts/kode_mono/Kode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kode Mono';
+  src: url('assets/fonts/kode_mono/Kode-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root{
   --kode-font: 'Kode Mono', Inter, sans-serif;
@@ -130,17 +152,29 @@ body{
   transition: all 0.5s ease;
 }
 
+.home__social img{
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .home__social:hover {
   opacity: 1;
 }
 
 .hero-img {
-  height:250px;
+  width: 250px;             /* reserve width */
+  height: auto;             /* let height be computed from aspect-ratio */
+  aspect-ratio: 1 / 1;      /* reserve square box even before image loads */
+  object-fit: cover;        /* fill nicely if intrinsic ratio differs */
+  display: block;
   border-radius: 30px;
   position: relative;
   border: 2px solid black;
   -webkit-box-shadow: 8px 10px 0px rgb(21, 4, 4);
           box-shadow: 8px 10px 0px rgb(21, 4, 4);
+  background-color: transparent; /* no background to avoid white box */
 }
 
 .hero-pic{
@@ -276,6 +310,19 @@ body::-webkit-scrollbar-thumb {
   background-color: #555;
 }
 
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate__animated {
+    animation: none !important;
+  }
+}
+
 
 
 @media screen and (max-width: 780px){
@@ -299,7 +346,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .hero-img{
-    height: 150px;
+    width: 150px;  /* keep square with aspect-ratio */
+    height: auto;
     margin-bottom: 1rem;
   }
 

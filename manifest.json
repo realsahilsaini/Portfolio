@@ -1,0 +1,17 @@
+{
+  "name": "Sahil Saini — Portfolio",
+  "short_name": "Sahil Saini",
+  "description": "Full‑stack developer (MERN), exploring Web3 and no‑code. Building seamless front‑ends and solid back‑ends.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4d1ae",
+  "theme_color": "#f4d1ae",
+  "icons": [
+    {
+      "src": "assets/favicon/favIcon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
