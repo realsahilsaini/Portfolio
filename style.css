@@ -10,7 +10,7 @@
   src: url('assets/fonts/kode_mono/Kode[wght].woff2') format('woff2-variations');
   font-weight: 400 700;
   font-style: normal;
-  font-display: swap;
+  font-display: swap; /* Prevent layout shifts */
 }
 
 @font-face {
@@ -101,12 +101,14 @@ body{
   justify-content: space-around;
   border:2px solid black;
   box-shadow: 10px 10px 0px rgb(0, 0, 0);
+  min-height: 300px; /* Reserve space for hero content */
 }
 
 .hero-data {
   text-align: left;
   color: #000;
   margin: auto 0;
+  min-height: 200px; /* Reserve space for hero data */
 }
 
 .hero-work {
