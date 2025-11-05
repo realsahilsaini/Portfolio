@@ -25,6 +25,17 @@
     .home__social img{width:2.5rem;height:2.5rem;display:inline-block}
     .mansory-container .box img{width:100%;height:auto}
     .typed-js-div{display:flex;flex-direction:row;align-items:top;height:2rem;margin-bottom:1rem;min-height:2rem}
+  <!-- Register service worker for repeat-visit caching (non-blocking) -->
+  if ('serviceWorker' in navigator) {
+    // Register after load so we don't affect LCP/CLS
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        console.log('ServiceWorker registered, scope:', reg.scope);
+      }).catch(function(err){
+        console.warn('ServiceWorker registration failed:', err);
+      });
+    });
+  }
     .hero-work{font-size:1.5em;letter-spacing:2px;min-height:1.5em}
   </style>
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -285,6 +296,17 @@
     };
     document.body.appendChild(typedScript);
   });
+</script>
+
+<!-- Register a small, non-blocking service worker to provide effective repeat-visit caching -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function(reg) { console.log('SW registered:', reg.scope); })
+        .catch(function(err) { console.warn('SW registration failed:', err); });
+    });
+  }
 </script>
 
 </body>
