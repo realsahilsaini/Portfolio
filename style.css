@@ -98,8 +98,7 @@ body{
   padding: 4rem 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: space-around;
   border:2px solid black;
   box-shadow: 10px 10px 0px rgb(0, 0, 0);
 }
@@ -108,14 +107,11 @@ body{
   text-align: left;
   color: #000;
   margin: auto 0;
-  flex: 1 1 0%;
-  min-width: 0;
 }
 
 .hero-work {
   font-size: 1.5em;
   letter-spacing: 2px;
-  white-space: nowrap;
 }
 
 .typed-cursor{
@@ -201,7 +197,6 @@ body{
 
 .hero-pic{
   margin: auto 0;
-  flex: 0 0 250px;
 }
 
 
@@ -254,7 +249,6 @@ body{
   align-items: top;
   height: 2rem;
   margin-bottom: 1rem;
-  min-width: 16ch;
 }
 
 /* ----------------------------------- */
