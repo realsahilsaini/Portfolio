@@ -28,6 +28,7 @@
     .hero-work{font-size:1.5em;letter-spacing:2px;min-height:1.5em}
   </style>
   <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
   <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
@@ -85,44 +86,155 @@
     <section class="about"> 
 
       <div class="grid-container">
-        <div class="mansory-container">
+        <!-- Preconnect to Cloudinary for faster image fetch -->
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
 
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057467/mansory1-min_nmlalh.webp" alt="Sahil Saini lifestyle photo 1" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory3-min_xuyrlo.webp" alt="Sahil Saini lifestyle photo 2" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory4-min_bdhlz3.webp" alt="Sahil Saini lifestyle photo 3" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory5-min_rq5ic2.jpg" alt="Sahil Saini lifestyle photo 4" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory7-min_tglisg.webp" alt="Sahil Saini lifestyle photo 5" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory8-min_r8qjio.webp" alt="Sahil Saini lifestyle photo 6" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory9-min_eibkbe.webp" alt="Sahil Saini lifestyle photo 7" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory10-min_ramojg.webp" alt="Sahil Saini lifestyle photo 8" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory11-min_exrb8m.webp" alt="Sahil Saini lifestyle photo 9" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057468/mansory12-min_kcr9vp.webp" alt="Sahil Saini lifestyle photo 10" width="300" height="400" loading="lazy">
-          </div>
-          <div class="box">
-            <img src="https://res.cloudinary.com/dgsw81awo/image/upload/v1726057469/mansory13-min_kuw9mo.webp" alt="Sahil Saini lifestyle photo 11" width="300" height="400" loading="lazy">
-          </div>
-    
-        </div>
-      </div>
+<div class="mansory-container">
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057467/mansory1-min_nmlalh"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057467/mansory1-min_nmlalh 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057467/mansory1-min_nmlalh 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057467/mansory1-min_nmlalh 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 1" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory3-min_xuyrlo"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory3-min_xuyrlo 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory3-min_xuyrlo 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory3-min_xuyrlo 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 2" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory4-min_bdhlz3"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory4-min_bdhlz3 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory4-min_bdhlz3 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory4-min_bdhlz3 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 3" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory5-min_rq5ic2"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory5-min_rq5ic2 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory5-min_rq5ic2 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory5-min_rq5ic2 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 4" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory7-min_tglisg"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory7-min_tglisg 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory7-min_tglisg 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory7-min_tglisg 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 5" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory8-min_r8qjio"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory8-min_r8qjio 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory8-min_r8qjio 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory8-min_r8qjio 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 6" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory9-min_eibkbe"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057469/mansory9-min_eibkbe 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory9-min_eibkbe 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057469/mansory9-min_eibkbe 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 7" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory10-min_ramojg"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057469/mansory10-min_ramojg 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory10-min_ramojg 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057469/mansory10-min_ramojg 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 8" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory11-min_exrb8m"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057469/mansory11-min_exrb8m 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory11-min_exrb8m 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057469/mansory11-min_exrb8m 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 9" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory12-min_kcr9vp"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057468/mansory12-min_kcr9vp 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057468/mansory12-min_kcr9vp 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057468/mansory12-min_kcr9vp 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 10" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+
+    <div class="box">
+    <img 
+      src="https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory13-min_kuw9mo"
+      srcset="
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_200/v1726057469/mansory13-min_kuw9mo 200w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_400/v1726057469/mansory13-min_kuw9mo 400w,
+        https://res.cloudinary.com/dgsw81awo/image/upload/f_auto,q_auto,w_800/v1726057469/mansory13-min_kuw9mo 800w"
+      sizes="(max-width: 600px) 200px, (max-width: 900px) 400px, 800px"
+      alt="Sahil Saini lifestyle photo 11" 
+      width="300" height="400" 
+      loading="lazy">
+    </div>
+    </div>
+
+</div>
 
       <div class="container">
         <h2 class="about-head">Hi_</h2>
